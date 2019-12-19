@@ -4,7 +4,7 @@ import math
 def compute_ciou(target,  output):
     '''
     takes in a list of bounding boxes
-    but can also work for a single bounding box too
+    but can work for a single bounding box too
     all the boundary cases such as bounding boxes of size 0 are handled.
     ''' 
     x1g, y1g, x2g, y2g = tf.split(value=target, num_or_size_splits=4, axis=1)
